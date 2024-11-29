@@ -7,5 +7,5 @@ st.text("""mi nombre es maria jose pardo ruiz, estudiante de primer semestre de 
  """)
 
 
-st.title("¿Qué aprendizaje le deja la materia deprogramación I?")
-st.text(""" la matria de programacion me dejo como aprendozaje """)
+st.subheader("¿Qué aprendizaje le deja la materia deprogramación I?")
+st.text(""" la materia de programacion me dejo como aprendozaje """)
