@@ -68,7 +68,7 @@ with c1:
    st.subheader("la dilatacion")
    st.text("""Es una transformación que cambia el tamaño de una figura, ampliándola o reduciéndola, manteniendo la forma.""")
    st.markdown("**formula**")
-   st.text("x′=k⋅x")
+   st.latex("x′=k⋅x")
    st.latex("y′=k⋅y")
 
 
@@ -84,7 +84,7 @@ with c1:
     st.latex("y′=x⋅sin(θ)+y⋅cos(θ)")
 
 with c2:
-    st.image("")
+    st.image("https://calculo.cc/temas/temas_geometria/movimiento_plano/imagenes/teoria/giro/t_1_2.gif")
 
 
 
