@@ -1,10 +1,5 @@
 import streamlit as st
 import numpy as st
-st.title(" pagina de inputs")
-
-
-st.text("practica")
-st.text("1. ¿Cuántos ejes de simetría tiene un cuadrado?")
 
 st.title("selectbox")
 
@@ -14,15 +9,10 @@ contact_selected = st.selectbox("why would you like to be contacted?",
                                 options = contact_options)
 
 st.write("selectbox returns:", contact selected,
-          "of type, type(contact_selected))
+          of type, type(contact_selected))
 
 if contact_selected == "Email":
     st.write("**confirm your email address by clicking the link sen to you**")
 else:
     st.write("**thank you, we will be in touch soon")
 
-
-
-st.text(""" 2. Dibuja un triángulo con vértices en las coordenadas A(1, 2), B(3, 2), C(2, 4). 
-Luego traslada el triángulo 4 unidades a la derecha y 3 unidades hacia abajo""")
-st.text("")

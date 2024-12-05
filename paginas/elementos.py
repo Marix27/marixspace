@@ -30,8 +30,7 @@ st.text("Los nuevos vértices del triángulo reflejado son 𝐴′(1,−2), 𝐵
 
 
 st.title("ejemplos de dilatacion")
-st.text("1. Refleja el punto 𝑃(2,3) con un factor de dilatación 2 respecto al origen.")
-st.text("Para 𝑃(3,4):")
+st.text("1. Refleja el punto 𝑃(2,3) con un factor de dilatación 2 respecto al origen, para 𝑃(3,4):")
 st.latex("P′(−3,4)")
 st.text("Resultado: El punto reflejado es 𝑃′(−3,4).")
 st.text("2. Dilatación de un triángulo con vértices en 𝐴(1,2), 𝐵(3,1) y 𝐶(2,4) con un factor de dilatación 3 respecto al origen.")
@@ -44,9 +43,8 @@ st.text("Los nuevos vértices del triángulo son 𝐴′(3,6), 𝐵′(9,3) y �
 
 
 st.title("ejemplos de rotacion")
-st.text("Rota el punto 𝑃(2,3) 90° en sentido horario alrededor del origen.")
-st.text("Para 𝑃(2,3):")
-st.latex("Para 𝑃(2,3):")
+st.text("Rota el punto 𝑃(2,3) 90° en sentido horario alrededor del origen, para 𝑃(2,3):")
+st.latex("𝑃(2,3):")
 st.text("El punto rotado es 𝑃′(3,−2).")
 st.text("2. Rota el triángulo con vértices 𝐴(1,0), 𝐵(0,1) y 𝐶(−1,0) 180° alrededor del origen.")
 st.text("Aplicamos esta fórmula a cada vértice:")
