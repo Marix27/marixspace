@@ -4,7 +4,7 @@ import streamlit as st
 st.title("Transformaciones geometricas")
 
 # Subtítulo
-st.subheader("¿Que son?")
+st.header("¿Que son?")
 
 # texto
 st.write(
@@ -23,7 +23,7 @@ st.text("""Son aquellas en las que la figura conserva la forma de la figura inic
 los ángulos se conservan y las magnitudes son distintas, pero proporcionales. 
 
 """)
-st.header("3. Trasnformaciones anamorficas")
+st.subheader("3. Trasnformaciones anamorficas")
 st.text("""Son transformaciones en la que la figura es completamente diferente a la inicial varían forma, 
 magnitud y sólo mantiene alguna propiedad
 """)
