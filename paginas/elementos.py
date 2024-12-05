@@ -24,6 +24,11 @@ st.text("Resultado: El punto transformado es 𝑃′(4,6).")
 
 
 st.title("ejemplos de dilatacion")
+st.text("1. Refleja el punto 𝑃(2,3) con un factor de dilatación 2 respecto al origen.")
+st.text("Para 𝑃(2,3) y 𝑘=2:")
+st.latex("P′(2⋅2),(2⋅3)=P′(4,6)")
+st.text("Resultado: El punto transformado es 𝑃′(4,6).")
+
 st.text("2. Dilatación de un triángulo con vértices en 𝐴(1,2), 𝐵(3,1) y 𝐶(2,4) con un factor de dilatación 3 respecto al origen.")
 st.text("Solución: Aplicamos la fórmula de dilatación a cada uno de los vértices:")
 st.latex("A′(1⋅3,2⋅3)=A′(3,6)")
