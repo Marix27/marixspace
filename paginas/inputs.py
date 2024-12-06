@@ -1,18 +1,21 @@
 import streamlit as st
-import numpy as st
 
-st.title("selectbox")
+rta1 = st.selectbox("cual wa la respuesta", ["si","no"])
+c1 = st.empty()
+rta2 = st.selectbox("elegir", ["si","no"])
+c2 = st.empty
 
-contact_options = ["email", "phone", "text"]
-st.header("selectbox from a list")
-contact_selected = st.selectbox("why would you like to be contacted?",
-                                options = contact_options)
+if st.button("verificar"):
+     ptos = 0
+     if rta1 == "no":
+          c1.info("perfecto")
+          ptos += 1
+     else:
+          c1.error("incorrecto")
 
-st.write("selectbox returns:", contact_selected,
-          "of type", type(contact_selected))
-
-if contact_selected == "Email":
-    st.write("**confirm your email address by clicking the link sen to you**")
-else:
-    st.write("**thank you, we will be in touch soon")
-
+        
+     if rta2 == "arquimedes"
+          c2.info("perfecto")
+          ptos += 1
+    else:
+          c2.error("incorrecto")
