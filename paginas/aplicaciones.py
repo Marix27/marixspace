@@ -57,7 +57,7 @@ if st.button("verificar"):
           c4.info("perfecto")
           ptos += 1
     else: 
-          c4.error("")
+          c4.error("incorrecto")
 
     if rta5 == "b) Porque permiten comprender cómo las figuras y objetos se comportan al ser modificados en el espacio, y son esenciales en disciplinas como la computación gráfica, la arquitectura, la robótica y el arte.":
           c5.info("perfecto")
@@ -70,7 +70,7 @@ if st.button("verificar"):
           c6.info("perfecto")
           ptos += 1
     else: 
-          c6.error("")
+          c6.error("incorrecto")
 
     
     if rta7 == "P(−2,1),Q(−4,3),R(−2,5)":
