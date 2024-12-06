@@ -14,7 +14,7 @@ if st.button("verificar"):
           c1.error("incorrecto")
 
         
-    if rta2 == "arquimedes"
+    if rta2 == "arquimedes":
           c2.info("perfecto")
           ptos += 1
     else:
