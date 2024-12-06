@@ -7,7 +7,7 @@ import pandas as pd
 #graficar figuras geometricas
 st.divider()
 st.subheader("Figuras geometricas")
-c1, c2 ,c3, c4 = st.columns([1, 3], vertical_alignment="center")
+c1, c2 ,c3, c4 = st.columns([1, 3, 5, 7], vertical_alignment="center")
 puntos = pd.DataFrame({
     "x": [1, 1, -1],
     "y": [1, -1, 0.5],
