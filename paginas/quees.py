@@ -5,7 +5,7 @@ st.title("Transformaciones geometricas")
 
 
 # Subtítulo
-st.header("¿Que son?")
+st.subheader("¿Que son?")
 
 # texto
 st.write(
@@ -14,20 +14,20 @@ st.write(
 
     """)
 
-st.header("para que nos sirven las transformaciones geometricas ")
+st.subheader("para que nos sirven las transformaciones geometricas ")
 st.text("Las transformaciones geométricas son fundamentales en muchas ramas de las matemáticas y las ciencias aplicadas. Permiten comprender cómo las figuras y objetos se comportan al ser modificados en el espacio, y son esenciales en disciplinas como la computación gráfica, el diseño industrial, la arquitectura, la cartografía, la robótica y el arte. Además, facilitan la resolución de problemas geométricos complejos y el análisis de las simetrías y patrones de figuras en diferentes contextos.")
 
 st.header("propiedades")
-st.subheader("1. Tansformaciones isométricas")
+st.subheader("**Tansformaciones isométricas**")
 st.text("""Son transformaciones donde la figura resultante conserva las medidas y los ángulos de la figura inicial. 
 mantiene la forma y el tamaño
     """)
-st.subheader("2. Transformaciones isomórficas ")
+st.subheader("***Transformaciones isomórficas*** ")
 st.text("""Son aquellas en las que la figura conserva la forma de la figura inicial, pero varía el tamaño
 los ángulos se conservan y las magnitudes son distintas, pero proporcionales. 
 
 """)
-st.subheader("3. Trasnformaciones anamorficas")
+st.subheader("+ Trasnformaciones anamorficas")
 st.text("""Son transformaciones en la que la figura es completamente diferente a la inicial varían forma, 
 magnitud y sólo mantiene alguna propiedad
 """)
