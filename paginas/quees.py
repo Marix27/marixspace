@@ -13,6 +13,9 @@ st.write(
 
     """)
 
+st.header("para que nos sirven las transformaciones geometricas ")
+st.text("Las transformaciones geométricas son fundamentales en muchas ramas de las matemáticas y las ciencias aplicadas. Permiten comprender cómo las figuras y objetos se comportan al ser modificados en el espacio, y son esenciales en disciplinas como la computación gráfica, el diseño industrial, la arquitectura, la cartografía, la robótica y el arte. Además, facilitan la resolución de problemas geométricos complejos y el análisis de las simetrías y patrones de figuras en diferentes contextos.")
+
 st.header("propiedades")
 st.subheader("1. Tansformaciones isométricas")
 st.text("""Son transformaciones donde la figura resultante conserva las medidas y los ángulos de la figura inicial. 
