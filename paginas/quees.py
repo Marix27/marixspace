@@ -3,6 +3,7 @@ import streamlit as st
 # título de la página
 st.title("Transformaciones geometricas")
 
+
 # Subtítulo
 st.header("¿Que son?")
 

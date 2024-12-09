@@ -39,13 +39,12 @@ if st.button("verificar"):
           ptos += 1
     else:
           c1.error("incorrecto")
-
-        
+    
     if rta2 == "Es un desplazamiento de una figura sin cambiar su forma, tamaño ni orientación.":
           c2.info("perfecto")
           ptos += 1
     else:
-          c2.error("incorrecto")
+          c2.error("incorrecto, no")
       
     if rta3 == "b) Son procesos matemáticos que permiten modificar una figura sin perder su esencia, cambiando su posición, forma o tamaño.":
           c3.info("perfecto")
