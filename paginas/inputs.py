@@ -3,14 +3,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.patches as patches
 import pandas as pd 
-
+from PIL import Image
+st.title("Ejercicios dinamicos")
+preg1 = st.text("")
 #graficar figuras geometricas
 st.divider()
 st.subheader("Figuras geometricas")
 c1, c2 = st.columns([1, 3], vertical_alignment="center")
 puntos = pd.DataFrame({
     "x": [1, 1, -1],
-    "y": [1, -1, 0.5],
+    "y": [2, -1, 0.5],
  })
 with c1: 
     
@@ -28,10 +30,12 @@ with c2:
 
 st.divider()
 
-st.header("ejercicios")
-st.text("abre la pagina de geogebra y crea una construccion de las anteriore y sube el archivo aqui")
-uploaded_file = st.file_uploader("Sube un archivo CSV", type=["csv"])
+st.header("segundo ejercicio")
+st.text("Abra la pagina de geogebra y cree una construccion ya sea de rotacion, traslacion, dilatacion o reflexion, tomele capture y suba el archivo aqui")
+# Subir archivo
+archivo = st.file_uploader("Cargar ejercicio", type=["png", "jpg", "jpeg"])
 
-if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
-    st.write(df)
+if archivo is not None:
+    # Mostrar imagen cargada
+    imagen = Image.open(archivo)
+    st.image(imagen, caption="Imagen cargada con éxito", use_column_width=True)

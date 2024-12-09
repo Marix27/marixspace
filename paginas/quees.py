@@ -1,11 +1,11 @@
 import streamlit as st
 
 # título de la página
-st.title("Transformaciones geometricas")
+st.title("Transformaciones geométricas")
 
 
 # Subtítulo
-st.subheader("¿Que son?")
+st.subheader("¿Qué son?")
 
 # texto
 st.write(
@@ -14,31 +14,31 @@ st.write(
 
     """)
 
-st.subheader("para que nos sirven las transformaciones geometricas ")
-st.text("Las transformaciones geométricas son fundamentales en muchas ramas de las matemáticas y las ciencias aplicadas. Permiten comprender cómo las figuras y objetos se comportan al ser modificados en el espacio, y son esenciales en disciplinas como la computación gráfica, el diseño industrial, la arquitectura, la cartografía, la robótica y el arte. Además, facilitan la resolución de problemas geométricos complejos y el análisis de las simetrías y patrones de figuras en diferentes contextos.")
+st.subheader("¿Para qué nos sirven las transformaciones geométricas?")
+st.text("Las transformaciones geométricas son fundamentales en muchas ramas de las matemáticas y las ciencias aplicadas. Permiten comprender cómo las figuras y objetos se comportan al ser modificados en el espacio.")
 
-st.header("propiedades")
-st.subheader("**Tansformaciones isométricas**")
+st.header("Tipos de transformaciones")
+st.subheader("Tansformaciones isométricas")
 st.text("""Son transformaciones donde la figura resultante conserva las medidas y los ángulos de la figura inicial. 
 mantiene la forma y el tamaño
     """)
-st.subheader("***Transformaciones isomórficas*** ")
+st.subheader("Transformaciones isomórficas")
 st.text("""Son aquellas en las que la figura conserva la forma de la figura inicial, pero varía el tamaño
 los ángulos se conservan y las magnitudes son distintas, pero proporcionales. 
 
 """)
-st.subheader("+ Trasnformaciones anamorficas")
+st.subheader("Trasnformaciones anamorficas")
 st.text("""Son transformaciones en la que la figura es completamente diferente a la inicial varían forma, 
 magnitud y sólo mantiene alguna propiedad
 """)
 
-st.header("tipos de transformaciones")
+st.header("Propiedades")
 
-c1, c2 = st.columns(2)
+c1, c2 = st.columns(2, vertical_alignment="center")
 with c1: 
-    st.subheader("traslacion")
+    st.subheader("Traslación")
     st.text("""La traslación es un desplazamiento de una figura en el plano sin cambiar su forma, tamaño ni orientación""")
-    st.markdown("**formula**")
+    st.markdown("**Fórmula**")
     st.latex("x′=x+a")
     st.latex("y′=y+b")
    
@@ -48,15 +48,15 @@ with c2:
 
 
 #columnas2
-c1, c2 = st.columns(2)
+c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("la reflexion")
+    st.subheader("La reflexión")
     st.text("es una transformación que genera una imagen especular de una figura respecto a una recta o plano llamado eje de simetría")
     st.markdown("**formula**")
-    st.text("reflexion sobre el eje x")
+    st.text("Reflexión sobre el eje x")
     st.latex("x′=x")
     st.latex("y′=−y")
-    st.text("reflexion sobre el eje y")
+    st.text("Reflexión sobre el eje y")
     st.latex("x′=−x")
     st.latex("y′=y")
    
@@ -67,23 +67,23 @@ with c2:
 
 
 #columnas 3
-c1, c2 = st.columns(2)
+c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-   st.subheader("la dilatacion")
+   st.subheader("La dilatación")
    st.text("""Es una transformación que cambia el tamaño de una figura, ampliándola o reduciéndola, manteniendo la forma.""")
-   st.markdown("**formula**")
+   st.markdown("**Fórmula**")
    st.latex("x′=k⋅x")
    st.latex("y′=k⋅y")
 
 
 with c2:
-    st.image("https://dibujotecni.com/wp-content/uploads/2020/04/Cuadrado-equivalente-a-un-poligono-regular.png")
+    st.image("https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A068abef32c5a49e7e8ba6b0104cad264316527716ecca70fa4aeff14%2BIMAGE_TINY%2BIMAGE_TINY.1")
 
-c1,c2 = st.columns(2)
+c1,c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("La rotacion")
+    st.subheader("La rotación")
     st.text("implica girar una figura alrededor de un punto fijo, llamado centro de rotación, por un ángulo determinado.")
-    st.markdown("**formula**")
+    st.markdown("**Fórmula**")
     st.latex("x′=x⋅cos(θ)−y⋅sin(θ)")
     st.latex("y′=x⋅sin(θ)+y⋅cos(θ)")
 

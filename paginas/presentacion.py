@@ -1,4 +1,7 @@
 import streamlit as st
+st.title("Presentación personal")
+st.subheader("Hola, mi nombre es María José Pardo Ruíz, soy estudiante de la carrera de matemáticas y actualmente estoy en primer semestre")
+
 with st.form(key='my_form'):
     nombre = st.text_input("¿Cómo te llamas?")
     edad = st.number_input("¿Cuántos años tienes?", min_value=0, max_value=100)
@@ -10,3 +13,4 @@ with st.form(key='my_form'):
 
 if submit_button:
     st.write(f"Nombre: {nombre}, Edad: {edad}, Carrera: {carrera}, Tema: {tema}, Mejorar:{mejorar}, Dudas:{dudas}")
+
