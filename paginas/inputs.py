@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon
 
-st.title("Ejercicios dinamicos")
+st.title("Ejercicios dinámicos")
 preg1 = st.text("")
 puntos = pd.DataFrame({
     "x": [1, 3, 5],
@@ -51,16 +51,21 @@ with c4:
 st.divider()
 
 
-preg6 = st.selectbox("Dado un triángulo con vértices A(1,2), B(3,4), C(5,2), trasládalo 4 unidades a la derecha y 3 unidades hacia arriba.",["A(−3,−2), B′(9,4), C′(7,1)", "A′(3,4), B′(0,1), C'(−3,−2)", "A′(4,5), B′(7,7), C′(9,3)"])
-c6 = st.empty()
 
-puntos = 0
-if st.button("verificar todo"):
-  if preg6 == "A′(4,5), B′(7,7), C′(9,3)":
-        c6.success("Correcto")
-        puntos += 1
-  else:
-        c6.error("Incorrecto")
+st.text("Dado el triángulo anterior con vértices A(1,2), B(3,4), C(5,2), trasládalo 4 unidades a la derecha y 3 unidades hacia arriba.")
+opciones = [
+    "A′(−3,−2), B′(9,4), C′(7,1)",
+    "A′(3,4), B′(0,1), C′(−3,−2)",
+    "A′(5,5), B′(7,7), C′(9,5)"
+]
+
+respuesta_correcta = "A′(5,5), B′(7,7), C′(9,5)"
+respuesta = st.radio("Elige una opción:", opciones)
+if respuesta == respuesta_correcta:
+        st.success("Correcto")
+else:
+        st.error("incorrecta.")
+
 
 
 
@@ -105,16 +110,17 @@ with col4:
     st.pyplot(fig2)
 st.divider()
 
-preg8 = st.selectbox("Si un cuadrado tiene vértices en (1,1),B(3,1),C(3,3),D(1,3) y se traslada 4 unidades hacia la izquierda y 2 unidades hacia abajo, ¿qué coordenadas tendrá el vértice 𝐶?",["C(1,1)","C(1,5)","C(−1,1)"])
-c8 = st.empty()
 
-puntos = 0
-
-if preg8 == "C(1,1)":
-        c8.success("Correcto")
-        puntos += 1
+st.text("Dado el hexágono anterior con vértices en A(2,4), B(1,3), C(1,2), D(2,1), E(3,2), F(3,3). si la figura es rotada 90° en sentido antihorario alrededor del origen (0,0), ¿cuáles serán las coordenadas de los vértices resultantes?")
+opciones = ["A(2,4), B(4,3), C(1,6), D(2,1), E(3,2), F(3,3)", "A(2,4), B(1,5), C(1,3), D(2,1), E(3,2), F(3,3)", "A(-4,2), B(-3,1), C(-2,1), D(-1,2), E(-2,3), F(-3,3)"]
+respuesta_correcta = "A(-4,2), B(-3,1), C(-2,1), D(-1,2), E(-2,3), F(-3,3)"
+respuesta = st.radio("Elige una opción:", opciones)
+if respuesta == respuesta_correcta:
+        st.success("Correcto")
 else:
-        c8.error("Incorrecto")
+        st.error("incorrecta.")
+
+
 
 
 
@@ -159,23 +165,24 @@ with col4:
     st.pyplot(fig2)
 st.divider()
 
-preg9 = st.selectbox("Dado un triángulo con vértices A(1,1), B(2,3), y C(4,1), si se realiza una dilatación con un factor de escala de 2 respecto al origen (0, 0), ¿cuáles son las nuevas coordenadas de los vértices?", ["A(2,2), B(4,6), C(8,2)", "A(1,2), B(2,6),C(4,2)", "A(2,2), B(4,6),C(6,2)"])
-c9 = st.empty()
 
-puntos = 0
-if preg9 == "a) 𝐴(2,2), 𝐵(4,6), 𝐶(8,2)":
-        c9.success("Correcto")
-        puntos += 1
+
+st.text("Si un cuadrado tiene vértices en A(1,1), B(3,1), C(3,3), D(1,3) y se traslada 2 unidades hacia la derecha y 3 unidades hacia arriba, ¿qué coordenadas tendrá el vértice B?")
+opciones = ["B(5,4)", "B(3,6)", "B(5,1)"]
+respuesta_correcta = "B(5,4)"
+respuesta = st.radio("Elige una opción:", opciones)
+if respuesta == respuesta_correcta:
+        st.success("Correcto")
 else:
-        c9.error("Incorrecto")
+        st.error("incorrecta.")
 
 
 
 st.header("Cuarto ejercicio")
 preg1 = st.text("")
 puntos = pd.DataFrame({
-    "x": [2, 2, 6, 6],
-    "y": [4, 3, 4, 3],
+    "x": [3, 2, 3, 4],
+    "y": [4, 2, 1, 2],
 })
 
 st.divider()
@@ -212,16 +219,14 @@ with col4:
     st.pyplot(fig2)
 st.divider()
 
-preg10 = st.selectbox("Refleja el punto Q(3,−4) respecto al eje 𝑦. ¿Dónde estará el nuevo punto?",["a) (−3,4)", "b) (4,−3)","c) (−3,−4)"])
-c10 = st.empty()
-
-puntos = 0
-if preg10 == "a) (−3,4)":
-        c10.success("Correcto")
-        puntos += 1
+st.text("Dado el triangulo anterior con vértices en A(3,4), B(2,2), C(3,1), D(4,2), si se realiza una dilatación con un factor de escala de 3 respecto al origen (0, 0), ¿cuáles son las nuevas coordenadas de los vértices? ")
+opciones = ["a)A′(9,12),B′(6,6),C′(9,3),D′(12,6)", "b)A′(6,8),B′(4,4),C′(6,2),D′(8,4)", "c)A′(12,16),B′(8,8),C′(12,4),D′(16,8)"]
+respuesta_correcta = "a)A′(9,12),B′(6,6),C′(9,3),D′(12,6)"
+respuesta = st.radio("Elige una opción:", opciones)
+if respuesta == respuesta_correcta:
+        st.success("Correcto")
 else:
-        c10.error("Incorrecto")
-
+        st.error("incorrecta.")
 
 
 st.header("segundo ejercicio")

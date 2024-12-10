@@ -1,6 +1,7 @@
 import streamlit as st
 import streamlit as str
 st.title("Evaluación")
+st.text("Ahora vamos a evaluar lo que aprendiste")
 
 preg1 = st.selectbox("¿Qué ocurre durante una rotación en geometría?", ["La figura se mueve a lo largo de una línea recta sin cambiar su forma",
                                                                        "La figura gira alrededor de un punto fijo, manteniendo su forma y tamaño, pero cambiando su orientación.",
@@ -97,4 +98,17 @@ if st.button("verificar todo"):
 
     st.write(f"Tu puntaje final es: {puntos}/10")
     
-   
+
+st.title("Formulario")
+st.text("Ahora llena este formulario con tus datos")
+with st.form(key='my_form'):
+    nombre = st.text_input("¿Cómo te llamas?")
+    edad = st.number_input("¿Cuántos años tienes?", min_value=0, max_value=100)
+    carrera = st.text_input("¿Qúe carrera hace?")
+    tema = st.text_input("¿El tema esta acorde con lo visto en el semestre?")
+    mejorar = st.text_input("¿Qúe podria haber mejorado la pagina?")
+    dudas = st.text_input("La información fue clara y concisa?")
+    submit_button = st.form_submit_button(label='Enviar')
+
+if submit_button:
+    st.write(f"Nombre: {nombre}, Edad: {edad}, Carrera: {carrera}, Tema: {tema}, Mejorar:{mejorar}, Dudas:{dudas}") 

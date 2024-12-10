@@ -8,7 +8,7 @@ inputs = st.Page("paginas/inputs.py", title="Ejercicios", icon =":material/fitne
 
 #navigation
 pg = st.navigation([quees, elementos, aplicaciones, presentacion, inputs])
-pg = st.navigation({"Introducción": [quees, elementos], "Aplicaciones": [inputs, aplicaciones], "Conclusiones": [presentacion]})
+pg = st.navigation({"Introducción": [presentacion ,quees, elementos ], "Aplicaciones": [inputs], "Conclusiones": [aplicaciones]})
 
 # ejecutar
 pg.run()
