@@ -3,7 +3,7 @@ import streamlit as st
 # título de la página
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
- st.header("Transformaciones geométricas")
+ st.title("Las transformaciones geométricas")
 with c2:
     st.image("https://i.pinimg.com/736x/6c/30/ed/6c30edebdef3ed9ad6346b621d3246ff.jpg")
 
@@ -31,7 +31,7 @@ st.text("""Son aquellas en las que la figura conserva la forma de la figura inic
 los ángulos se conservan y las magnitudes son distintas, pero proporcionales. 
 
 """)
-st.subheader("Trasnformaciones anamorficas")
+st.subheader("Transformaciones anamorficas")
 st.text("""Son transformaciones en la que la figura es completamente diferente a la inicial varían forma, 
 magnitud y sólo mantiene alguna propiedad
 """)
