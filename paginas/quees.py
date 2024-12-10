@@ -1,7 +1,11 @@
 import streamlit as st
 
 # título de la página
-st.title("Transformaciones geométricas")
+c1, c2 = st.columns(2, vertical_alignment="center")
+with c1:
+ st.header("Transformaciones geométricas")
+with c2:
+    st.image("https://i.pinimg.com/736x/6c/30/ed/6c30edebdef3ed9ad6346b621d3246ff.jpg")
 
 
 # Subtítulo

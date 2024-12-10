@@ -1,8 +1,8 @@
 import streamlit as st
-st.title("ejemplos de traslacion")
+st.title("Ejemplos de traslación")
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1: 
-    st.subheader("ejemplo 1")
+    st.subheader("Ejemplo 1")
     st.text("1. Si tenemos el punto A(2,3) y lo trasladamos 3 unidades a la derecha y 2 unidades hacia abajo, ¿cuál será su nueva posición?")
     st.latex("A′(x′,y′)=(2+3,3−2)=(5,1)")
     st.text("Entonces, el nuevo punto será A′(5,1).")
@@ -13,7 +13,7 @@ with c2:
 
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("ejemplo 2")
+    st.subheader("Ejemplo 2")
     st.text("2. Tenemos el triángulo △𝐴𝐵𝐶 cuyas coordenadas son 𝐴(1,2), 𝐵(3,4), y 𝐶(5,2), 2 unidades a la izquierda y 3 unidades hacia arriba.")
     st.latex("A′(1−2,2+3)=(−1,5)")
     st.latex("B′(4−2,5+3)=(2,8)")
@@ -26,10 +26,10 @@ with c2:
 
 
 
-st.title("ejemplos de reflexion")
+st.title("Ejemplos de reflexión")
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("ejemplo 1")
+    st.subheader("Ejemplo 1")
     st.text("1. Refleja sobre el eje 𝑥 el triángulo △𝐴𝐵𝐶 cuyas coordenadas son A(3,2), B(1,2), C(5,1).")
     st.latex("A(3,2)=A′(3,-2)")
     st.latex("B(1,2)=B′(1,-2)")
@@ -43,7 +43,7 @@ with c2:
 
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("ejemplo 2")
+    st.subheader("Ejemplo 2")
     st.text("2. Refleja el triángulo con vértices 𝐴(1,1), 𝐵(2,4), y 𝐶(5,6) respecto al eje 𝑥.")
     st.text("Aplicamos esta fórmula a cada vértice:")
     st.latex("Para 𝐴(1,1):  𝐴′(1,−1)")
@@ -55,10 +55,10 @@ with c2:
 
 
 
-st.title("ejemplos de dilatacion")
+st.title("Ejemplos de dilatación")
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("ejemplo 1")
+    st.subheader("Ejemplo 1")
     st.text("1. Refleja el punto 𝑃(2,3) con un factor de dilatación 2 respecto al origen")
     st.latex("P′(4,6)")
     st.text("Resultado: El punto reflejado es 𝑃′(4,6).")
@@ -70,7 +70,7 @@ with c2:
 
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("ejemplo 2")
+    st.subheader("Ejemplo 2")
     st.text("2. Dilatación de un triángulo con vértices en 𝐴(2,2), 𝐵(4,1) y 𝐶(3,3) con un factor de dilatación 3.")
     st.latex("A′(2⋅3,2⋅3)=A′(6,6)")
     st.latex("B′(4⋅3,1⋅3)=B′(12,3)")
@@ -81,10 +81,10 @@ with c2:
 
 
 
-st.title("ejemplos de rotacion")
+st.title("Ejemplos de rotación")
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("ejemplo 1")
+    st.subheader("Ejemplo 1")
     st.text("Rota el punto 𝑃(1,0) 90° en sentido horario alrededor del origen")
     st.latex("𝑃(1,0):")
     st.text("El punto rotado es 𝑃′(0,1).")
@@ -95,7 +95,7 @@ with c2:
 
 c1, c2 = st.columns(2, vertical_alignment="center")
 with c1:
-    st.subheader("ejemplo 2")
+    st.subheader("Ejemplo 2")
     st.text("2. Rota el triángulo con vértices 𝐴(0,3), 𝐵(-3,2) y 𝐶(3,2) 180° alrededor del origen.")
     st.text("Aplicamos esta fórmula a cada vértice:")
     st.latex("Para 𝐴(0,3):𝐴′(0,-3)")
